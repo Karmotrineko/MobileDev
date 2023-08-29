@@ -17,6 +17,7 @@ export default function SignIn() {
                 <Botao texto="Log-in!" />
                     <View style={styles.esqueci}>
                         <Text style={styles.link}>I forgot my password</Text>
+                        <Text style={styles.link}>Register now!</Text>
                     </View>
             </View>
     </Caixa>
@@ -29,9 +30,11 @@ const styles = StyleSheet.create({
     },
     link: {
         textDecorationLine: 'underline',
+        marginHorizontal: '10px'
     },
     esqueci: {
-        justifyContent: 'center',
+        flexDirection: 'row',
+        justifyContent: 'space-between',
         alignItems: 'center'
     }
 });

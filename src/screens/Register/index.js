@@ -42,6 +42,7 @@ const styles = StyleSheet.create({
         fontSize: '20px',
         fontFamily: 'Tahoma',
         fontWeight: 'bold',
-        marginTop: '-10px'
+        marginTop: '-10px',
+        marginLeft: '12px'
     }
 });

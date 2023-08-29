@@ -4,7 +4,7 @@ import { View, StyleSheet, Image } from "react-native";
 function Icone(){
     return(
         <Image
-            source={require('./amiya.png')}
+            source={require('../../../assets/amiya.png')}
             style={styles.img}
         />
     )

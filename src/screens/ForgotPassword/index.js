@@ -12,10 +12,14 @@ export default function SignIn() {
         <Icone/>
         <Textos texto="Rhodes Island"/>
             <View style={styles.div}>
-                <DialogoSeguro texto="New password" />
-                <Botao texto="Reset!" />
+                <View style={styles.esqueci}>
+                    <Text style={styles.header}>Registration page</Text>
+                </View>
+                <Dialogo texto="Email" />
+                <Botao texto="Reset password!" />
                     <View style={styles.esqueci}>
                         <Text style={styles.link}>Go back!</Text>
+                        <Text style={styles.link}>Register now!</Text>
                     </View>
             </View>
     </Caixa>
@@ -30,7 +34,14 @@ const styles = StyleSheet.create({
         textDecorationLine: 'underline',
     },
     esqueci: {
-        justifyContent: 'center',
+        flexDirection: 'row',
+        justifyContent: 'space-between',
         alignItems: 'center'
+    },
+    header: {
+        fontSize: '20px',
+        fontFamily: 'Tahoma',
+        fontWeight: 'bold',
+        marginTop: '-10px'
     }
 });

@@ -11,7 +11,7 @@ function Botao({texto}){
                   backgroundColor: pressed ? 'darkslategrey' : 'goldenrod',
                   padding: 10,
                   borderRadius: 12,
-                  marginTop: 12,
+                  marginTop: 18,
                   marginBottom: 10
                 },
               ]}>
