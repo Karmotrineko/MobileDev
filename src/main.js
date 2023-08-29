@@ -1,5 +1,5 @@
 import registerRootComponent from 'expo/build/launch/registerRootComponent';
 
-import App from './screens/ForgotPassword/index';
+import App from './App.js';
 
 registerRootComponent(App);

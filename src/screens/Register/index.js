@@ -5,22 +5,23 @@ import Textos from '../../components/Textos';
 import Dialogo from '../../components/Dialogo/Dialogo';
 import DialogoSeguro from '../../components/DialogoSeguro/DialogoSeguro';
 import Botao from '../../components/Botao';
+import { Link } from '@react-navigation/native';
 
-export default function SignIn() {
+export default function Register() {
   return (
     <Caixa>
         <Icone/>
         <Textos texto="Rhodes-Island"/>
             <View style={styles.div}>
                 <View style={styles.esqueci}>
-                    <Text style={styles.header}>Registration page</Text>
+                    <Text style={styles.header}> Registration page</Text>
                 </View>
                 <Dialogo texto="Username" />
                 <DialogoSeguro texto="Password" />
                 <DialogoSeguro texto="Confirm password" />
                 <Botao texto="Register!" />
                     <View style={styles.esqueci}>
-                        <Text style={styles.link}>Go back!</Text>
+                        <Link to={{screen: 'SignIn'}} style={styles.link}>Go back!</Link>
                     </View>
             </View>
     </Caixa>
@@ -43,6 +44,5 @@ const styles = StyleSheet.create({
         fontFamily: 'Tahoma',
         fontWeight: 'bold',
         marginTop: '-10px',
-        marginLeft: '12px'
     }
 });

@@ -1,10 +1,11 @@
-import { StyleSheet, Text, View, Image, TextInput } from 'react-native';
+import { StyleSheet, Text, View, } from 'react-native';
 import Icone from '../../components/icone';
 import Caixa from '../../components/Caixa';
 import Textos from '../../components/Textos';
 import Dialogo from '../../components/Dialogo/Dialogo';
 import DialogoSeguro from '../../components/DialogoSeguro/DialogoSeguro';
 import Botao from '../../components/Botao';
+import { Link } from '@react-navigation/native';
 
 export default function SignIn() {
   return (
@@ -16,8 +17,8 @@ export default function SignIn() {
                 <DialogoSeguro texto="Password" />
                 <Botao texto="Log-in!" />
                     <View style={styles.esqueci}>
-                        <Text style={styles.link}>I forgot my password</Text>
-                        <Text style={styles.link}>Register now!</Text>
+                        <Link to={{screen: 'ForgotPassword'}} style={styles.link}>I forgot my password</Link>
+                        <Link to={{screen: 'Register'}} style={styles.link}>Register now!</Link>
                     </View>
             </View>
     </Caixa>
