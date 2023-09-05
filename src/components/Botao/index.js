@@ -4,7 +4,7 @@ import { View, Text, Pressable, StyleSheet } from "react-native";
 function Botao({texto}){
     return(
         <View style={styles.aba}>
-            <Pressable onPress={() => {console.log('Botãpo Pressionado!'); }}
+            <Pressable onPress={() => {console.log('Botão Pressionado!'); }}
             
             style={({ pressed }) => [
                 {
