@@ -36,7 +36,7 @@ export default function SignIn() {
             <View style={styles.div}>
                 <TextInput style={styles.input} placeholder="Username" onChangeText={setUsername} value={username}/>
                 <DialogoSeguro texto="Password" onChangeText={setPassword} value={password} />
-                <Link to={{screen: 'Dashboard'}} onPress={() => signIn()} style={styles.dash}>ENTRAR</Link>
+                <Link to={{screen: 'Dashboard'}} onPress={() => signIn()} style={styles.dash}>LOG-IN</Link>
                     <View style={styles.esqueci}>
                         <Link to={{screen: 'ForgotPassword'}} style={styles.link}>I forgot my password</Link>
                         <Link to={{screen: 'Register'}} style={styles.link}>Register now!</Link>
