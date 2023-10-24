@@ -4,17 +4,18 @@ import ForgotPassword from './screens/ForgotPassword'
 import SignIn from './screens/SignIn';
 import Register from './screens/Register';
 import { NavigationContainer } from '@react-navigation/native';
+import Dashboard from './screens/Dashboard';
+import { AuthProvider } from './context/AuthContext.js';
+import Routes from "./routes/index.js";
 
 const Stack = createStackNavigator();
 
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator screenOptions={{headerShown: false}}>
-        <Stack.Screen name='SignIn' component={SignIn}/>
-        <Stack.Screen name='Register' component={Register}/>
-        <Stack.Screen name='ForgotPassword' component={ForgotPassword}/>
-      </Stack.Navigator>
+        <AuthProvider>
+          <Routes />
+        </AuthProvider>
     </NavigationContainer>
   );
 }

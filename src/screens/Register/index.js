@@ -1,5 +1,5 @@
 import { StyleSheet, Text, View, Image, TextInput } from 'react-native';
-import Icone from '../../components/icone';
+import Icone from '../../components/Icone';
 import Caixa from '../../components/Caixa';
 import Textos from '../../components/Textos';
 import Dialogo from '../../components/Dialogo/Dialogo';
@@ -11,7 +11,7 @@ export default function Register() {
   return (
     <Caixa>
         <Icone/>
-        <Textos texto="Rhodes-Island"/>
+        <Textos texto="Rhodes Island"/>
             <View style={styles.div}>
                 <View style={styles.esqueci}>
                     <Text style={styles.header}> Registration page</Text>

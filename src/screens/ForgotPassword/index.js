@@ -1,5 +1,5 @@
 import { StyleSheet, Text, View, Image, TextInput } from 'react-native';
-import Icone from '../../components/icone';
+import Icone from '../../components/Icone';
 import Caixa from '../../components/Caixa';
 import Textos from '../../components/Textos';
 import Dialogo from '../../components/Dialogo/Dialogo';
