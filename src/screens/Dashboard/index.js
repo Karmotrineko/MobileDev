@@ -9,13 +9,13 @@ export default function Dashboard() {
     return (
         <Caixa>
             <Icone/>
-            <Textos texto={"Bem-vindo!"} />
+            <Textos texto={"Welcome!"} />
                 <View style={styles.div}>
-            <Botao texto={'Marcar consulta'} />
-            <Botao texto={'Ver Horários'} />
-            <Botao texto={'Emergencia'} />
-            <Botao texto={'Terapia Hormonal'} />
-            <Botao texto={'Médicos Disponiveis'} />
+            <Botao texto={'Request Meeting'} />
+            <Botao texto={'Operational Areas'} />
+            <Botao texto={'Emergency'} />
+            <Botao texto={'Therapy Center'} />
+            <Botao texto={'Available Partners'} />
                 </View>
                 <Link to={{screen: 'SignIn'}} style={styles.link}>Voltar!</Link>
         </Caixa>
